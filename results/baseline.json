@@ -1,0 +1,606 @@
+{
+ "k": 5,
+ "questions": 27,
+ "evidence_recall": 0.4074,
+ "full_evidence": 0.3704,
+ "answerable": 0.3704,
+ "mrr": 0.2901,
+ "provenance": 0.7259,
+ "doc_coverage": 0.9167,
+ "chunk_size": 1000,
+ "chunk_overlap": 200,
+ "model": "sentence-transformers/all-MiniLM-L6-v2",
+ "per_question": [
+  {
+   "id": "Q01",
+   "question": "When did Werner acquire NEHDS Logistics?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 1,
+   "reciprocal_rank": 1.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2021#91",
+    "wern-10k-fy2021#199",
+    "wern-10k-fy2023#16",
+    "wern-10k-fy2022#211",
+    "wern-10k-fy2022#16"
+   ]
+  },
+  {
+   "id": "Q02",
+   "question": "What is Werner's commission file number?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 1,
+   "reciprocal_rank": 1.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2023#0",
+    "wern-10k-fy2022#0",
+    "wern-10k-fy2022#305",
+    "wern-10k-fy2021#0",
+    "wern-10k-fy2021#287"
+   ]
+  },
+  {
+   "id": "Q03",
+   "question": "What was the adverse jury verdict against Werner and what is its status?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 3,
+   "reciprocal_rank": 0.3333333333333333,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2022#272",
+    "wern-10k-fy2021#256",
+    "wern-10k-fy2023#280",
+    "wern-10k-fy2023#283",
+    "wern-10k-fy2021#258"
+   ]
+  },
+  {
+   "id": "Q04",
+   "question": "How many trucks were in Werner's TTS fleet at the end of 2023?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 4,
+   "reciprocal_rank": 0.25,
+   "provenance": 0.6,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2022#9",
+    "wern-10k-fy2022#38",
+    "wern-10k-fy2023#36",
+    "wern-10k-fy2023#9",
+    "wern-10k-fy2023#10"
+   ]
+  },
+  {
+   "id": "Q05",
+   "question": "What was Heartland Express's operating revenue in 2021?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 1,
+   "reciprocal_rank": 1.0,
+   "provenance": 1.0,
+   "doc_coverage": 0.667,
+   "missing_evidence": [],
+   "retrieved": [
+    "htld-10k-fy2022#342",
+    "htld-10k-fy2021#265",
+    "htld-10k-fy2021#280",
+    "htld-10k-fy2022#13",
+    "htld-10k-fy2022#332"
+   ]
+  },
+  {
+   "id": "Q06",
+   "question": "What was Werner's operating ratio in 2023?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 2,
+   "reciprocal_rank": 0.5,
+   "provenance": 0.2,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2022#119",
+    "wern-10k-fy2021#288",
+    "wern-10k-fy2022#306"
+   ]
+  },
+  {
+   "id": "Q07",
+   "question": "How did Werner Logistics perform in 2023?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 1,
+   "reciprocal_rank": 1.0,
+   "provenance": 0.4,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2021#264",
+    "wern-10k-fy2023#63",
+    "wern-10k-fy2021#15",
+    "wern-10k-fy2022#19"
+   ]
+  },
+  {
+   "id": "Q08",
+   "question": "What is Werner expecting for Werner Logistics revenue in 2024?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 1,
+   "reciprocal_rank": 1.0,
+   "provenance": 0.4,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2021#7",
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2022#117"
+   ]
+  },
+  {
+   "id": "Q09",
+   "question": "How profitable was Werner in 2023?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 2,
+   "reciprocal_rank": 0.5,
+   "provenance": 0.4,
+   "doc_coverage": 1.0,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2022#119",
+    "wern-10k-fy2022#162"
+   ]
+  },
+  {
+   "id": "Q10",
+   "question": "How many trailers does the company operate?",
+   "evidence_found": true,
+   "all_evidence_found": true,
+   "answerable": true,
+   "distractors_present": [],
+   "evidence_rank": 1,
+   "reciprocal_rank": 1.0,
+   "provenance": 1.0,
+   "doc_coverage": null,
+   "missing_evidence": [],
+   "retrieved": [
+    "wern-10k-fy2023#37",
+    "wern-10k-fy2022#38",
+    "wern-10k-fy2021#35",
+    "wern-10k-fy2023#10",
+    "wern-10k-fy2023#36"
+   ]
+  },
+  {
+   "id": "Q12",
+   "question": "What was Heartland Express's operating revenue in 2023?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [
+    "607,284",
+    "967,996"
+   ],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.0,
+   "doc_coverage": 0.0,
+   "missing_evidence": [
+    "1,207,458"
+   ],
+   "retrieved": [
+    "htld-10k-fy2022#342",
+    "htld-10k-fy2021#265",
+    "htld-10k-fy2022#308",
+    "htld-10k-fy2021#280",
+    "htld-10k-fy2022#13"
+   ]
+  },
+  {
+   "id": "Q13",
+   "question": "What were Werner's total revenues in 2021?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.4,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "2,734,372"
+   ],
+   "retrieved": [
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2022#119",
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2021#107"
+   ]
+  },
+  {
+   "id": "Q14",
+   "question": "What were Werner's total revenues in 2023?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.4,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "3,283,499"
+   ],
+   "retrieved": [
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2022#119",
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2021#107"
+   ]
+  },
+  {
+   "id": "Q15",
+   "question": "What were Werner's total operating revenues?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [
+    "2,734,372",
+    "3,289,978"
+   ],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "3,283,499"
+   ],
+   "retrieved": [
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2023#19",
+    "wern-10k-fy2021#107",
+    "wern-10k-fy2022#162"
+   ]
+  },
+  {
+   "id": "Q16",
+   "question": "What were Werner's revenues by geography in 2023?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.4,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "3,089,205",
+    "159,170"
+   ],
+   "retrieved": [
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2022#119",
+    "wern-10k-fy2022#162",
+    "wern-10k-fy2023#19"
+   ]
+  },
+  {
+   "id": "Q17",
+   "question": "What was Heartland Express's fuel surcharge revenue in 2023?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.6,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "173,817"
+   ],
+   "retrieved": [
+    "htld-10k-fy2023#267",
+    "htld-10k-fy2022#342",
+    "htld-10k-fy2023#281",
+    "htld-10k-fy2022#252",
+    "htld-10k-fy2023#52"
+   ]
+  },
+  {
+   "id": "Q18",
+   "question": "What are Werner's two reportable segments?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "Werner Logistics"
+   ],
+   "retrieved": [
+    "wern-10k-fy2022#305",
+    "wern-10k-fy2022#306",
+    "wern-10k-fy2021#287",
+    "wern-10k-fy2021#288",
+    "wern-10k-fy2023#312"
+   ]
+  },
+  {
+   "id": "Q19",
+   "question": "How many employees does Heartland Express have?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 0.667,
+   "missing_evidence": [
+    "6,040"
+   ],
+   "retrieved": [
+    "htld-10k-fy2022#342",
+    "htld-10k-fy2022#13",
+    "htld-10k-fy2022#308",
+    "htld-10k-fy2021#265",
+    "htld-10k-fy2022#420"
+   ]
+  },
+  {
+   "id": "Q20",
+   "question": "On which exchange is Heartland Express common stock listed?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "NASDAQ"
+   ],
+   "retrieved": [
+    "htld-10k-fy2022#13",
+    "htld-10k-fy2023#5",
+    "htld-10k-fy2021#265",
+    "htld-10k-fy2022#5",
+    "htld-10k-fy2022#308"
+   ]
+  },
+  {
+   "id": "Q21",
+   "question": "What operating ratio is Heartland Express aiming for?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 0.667,
+   "missing_evidence": [
+    "low-80s operating ratio"
+   ],
+   "retrieved": [
+    "htld-10k-fy2021#185",
+    "htld-10k-fy2022#13",
+    "htld-10k-fy2022#308",
+    "htld-10k-fy2021#265",
+    "htld-10k-fy2022#342"
+   ]
+  },
+  {
+   "id": "Q22",
+   "question": "How much did Werner pay to acquire ReedTMS?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.6,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "$109.2 million"
+   ],
+   "retrieved": [
+    "wern-10k-fy2022#132",
+    "wern-10k-fy2022#118",
+    "wern-10k-fy2023#130",
+    "wern-10k-fy2022#162",
+    "wern-10k-fy2023#128"
+   ]
+  },
+  {
+   "id": "Q23",
+   "question": "Is Werner expecting its revenues to decline?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "difficulty in recruiting and retaining"
+   ],
+   "retrieved": [
+    "wern-10k-fy2023#128",
+    "wern-10k-fy2021#115",
+    "wern-10k-fy2022#119",
+    "wern-10k-fy2023#129",
+    "wern-10k-fy2021#113"
+   ]
+  },
+  {
+   "id": "Q24",
+   "question": "Does Werner have good relationships with its vendors and suppliers?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "good vendor relationships",
+    "may cause our actual results"
+   ],
+   "retrieved": [
+    "wern-10k-fy2023#63",
+    "wern-10k-fy2021#7",
+    "wern-10k-fy2021#15",
+    "wern-10k-fy2022#64",
+    "wern-10k-fy2023#19"
+   ]
+  },
+  {
+   "id": "Q25",
+   "question": "Did both companies grow revenue in 2023 compared with 2022?",
+   "evidence_found": true,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 4,
+   "reciprocal_rank": 0.25,
+   "provenance": 1.0,
+   "doc_coverage": null,
+   "missing_evidence": [
+    "3,283,499",
+    "3,289,978",
+    "1,207,458"
+   ],
+   "retrieved": [
+    "htld-10k-fy2023#240",
+    "htld-10k-fy2022#275",
+    "wern-10k-fy2023#153",
+    "htld-10k-fy2022#228",
+    "htld-10k-fy2021#191"
+   ]
+  },
+  {
+   "id": "Q26",
+   "question": "Which of these two companies had the higher revenue in 2023?",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": null,
+   "missing_evidence": [
+    "3,283,499",
+    "1,207,458"
+   ],
+   "retrieved": [
+    "htld-10k-fy2023#240",
+    "wern-10k-fy2023#153",
+    "htld-10k-fy2022#275",
+    "wern-10k-fy2022#283",
+    "htld-10k-fy2021#191"
+   ]
+  },
+  {
+   "id": "Q27",
+   "question": "Summarise every risk factor Werner discloses for 2023.",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 0.2,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "difficulty in recruiting and retaining",
+    "cybersecurity",
+    "fuel",
+    "insurance"
+   ],
+   "retrieved": [
+    "wern-10k-fy2022#306",
+    "wern-10k-fy2021#288",
+    "htld-10k-fy2022#12",
+    "wern-10k-fy2023#313",
+    "htld-10k-fy2023#12"
+   ]
+  },
+  {
+   "id": "Q28",
+   "question": "List every acquisition Werner completed between 2021 and 2023.",
+   "evidence_found": false,
+   "all_evidence_found": false,
+   "answerable": false,
+   "distractors_present": [],
+   "evidence_rank": 0,
+   "reciprocal_rank": 0.0,
+   "provenance": 1.0,
+   "doc_coverage": 1.0,
+   "missing_evidence": [
+    "ECM Associated",
+    "NEHDS",
+    "Baylor",
+    "ReedTMS"
+   ],
+   "retrieved": [
+    "wern-10k-fy2021#288",
+    "wern-10k-fy2022#306",
+    "wern-10k-fy2022#305",
+    "wern-10k-fy2023#313",
+    "wern-10k-fy2023#312"
+   ]
+  }
+ ]
+}

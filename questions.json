@@ -1,0 +1,382 @@
+{
+ "description": "Test questions with known answers. Each carries the evidence that proves it - the exact text that must be retrieved for the answer to be supportable - plus, where relevant, distractors: values whose presence alongside the evidence makes the answer ambiguous rather than supported.",
+ "questions": [
+  {
+   "id": "Q01",
+   "question": "When did Werner acquire NEHDS Logistics?",
+   "answer": "November 2021.",
+   "evidence": [
+    "NEHDS"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q02",
+   "question": "What is Werner's commission file number?",
+   "answer": "0-14690.",
+   "evidence": [
+    "0-14690"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q03",
+   "question": "What was the adverse jury verdict against Werner and what is its status?",
+   "answer": "A verdict rendered on 17 May 2018, which Werner is appealing.",
+   "evidence": [
+    "May 17, 2018"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q04",
+   "question": "How many trucks were in Werner's TTS fleet at the end of 2023?",
+   "answer": "8,000 - 7,740 company-operated and 260 operated by independent contractors.",
+   "evidence": [
+    "7,740"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q05",
+   "question": "What was Heartland Express's operating revenue in 2021?",
+   "answer": "$607,284 thousand.",
+   "evidence": [
+    "607,284"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "htld-10k-fy2021",
+    "htld-10k-fy2022",
+    "htld-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q06",
+   "question": "What was Werner's operating ratio in 2023?",
+   "answer": "94.6%, against 90.2% in 2022.",
+   "evidence": [
+    "94.6%"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q07",
+   "question": "How did Werner Logistics perform in 2023?",
+   "answer": "Operating income fell to $15.9 million from $36.2 million in 2022.",
+   "evidence": [
+    "$15.9 million"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q08",
+   "question": "What is Werner expecting for Werner Logistics revenue in 2024?",
+   "answer": "Continued double-digit revenue growth.",
+   "evidence": [
+    "double-digit revenue growth"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q09",
+   "question": "How profitable was Werner in 2023?",
+   "answer": "Werner reports operating ratio rather than a profitability measure - 94.6% in 2023.",
+   "evidence": [
+    "operating ratio"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q10",
+   "question": "How many trailers does the company operate?",
+   "answer": "Unanswerable as asked - two companies, three years each, and no company or year named.",
+   "evidence": [
+    "30,810"
+   ],
+   "distractors": [],
+   "expect_docs": "corpus"
+  },
+  {
+   "id": "Q11",
+   "question": "What were revenues last year?",
+   "answer": "Unanswerable. Neither company nor year is determinable.",
+   "evidence": [],
+   "distractors": [],
+   "expect_docs": "corpus"
+  },
+  {
+   "id": "Q12",
+   "question": "What was Heartland Express's operating revenue in 2023?",
+   "answer": "$1,207,458 thousand.",
+   "evidence": [
+    "1,207,458"
+   ],
+   "distractors": [
+    "607,284",
+    "967,996"
+   ],
+   "expect_docs": [
+    "htld-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q13",
+   "question": "What were Werner's total revenues in 2021?",
+   "answer": "$2,734,372 thousand.",
+   "evidence": [
+    "2,734,372"
+   ],
+   "distractors": [
+    "3,289,978",
+    "3,283,499"
+   ],
+   "expect_docs": [
+    "wern-10k-fy2021"
+   ]
+  },
+  {
+   "id": "Q14",
+   "question": "What were Werner's total revenues in 2023?",
+   "answer": "$3,283,499 thousand.",
+   "evidence": [
+    "3,283,499"
+   ],
+   "distractors": [
+    "2,734,372",
+    "3,289,978"
+   ],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q15",
+   "question": "What were Werner's total operating revenues?",
+   "answer": "Depends on the year: $3,283,499k in 2023, $3,289,978k in 2022, $2,734,372k in 2021.",
+   "evidence": [
+    "3,283,499"
+   ],
+   "distractors": [
+    "2,734,372",
+    "3,289,978"
+   ],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q16",
+   "question": "What were Werner's revenues by geography in 2023?",
+   "answer": "United States $3,089,205k, Mexico $159,170k, Other $35,124k.",
+   "evidence": [
+    "3,089,205",
+    "159,170"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q17",
+   "question": "What was Heartland Express's fuel surcharge revenue in 2023?",
+   "answer": "$173,817 thousand.",
+   "evidence": [
+    "173,817"
+   ],
+   "distractors": [
+    "169,173",
+    "76,116"
+   ],
+   "expect_docs": [
+    "htld-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q18",
+   "question": "What are Werner's two reportable segments?",
+   "answer": "Truckload Transportation Services (TTS) and Werner Logistics.",
+   "evidence": [
+    "Werner Logistics"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q19",
+   "question": "How many employees does Heartland Express have?",
+   "answer": "Approximately 6,040, as of the end of February 2024.",
+   "evidence": [
+    "6,040"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "htld-10k-fy2021",
+    "htld-10k-fy2022",
+    "htld-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q20",
+   "question": "On which exchange is Heartland Express common stock listed?",
+   "answer": "NASDAQ, under the symbol HTLD.",
+   "evidence": [
+    "NASDAQ"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "htld-10k-fy2021",
+    "htld-10k-fy2022",
+    "htld-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q21",
+   "question": "What operating ratio is Heartland Express aiming for?",
+   "answer": "Low-80s, upon full integration of its acquisitions.",
+   "evidence": [
+    "low-80s operating ratio"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "htld-10k-fy2021",
+    "htld-10k-fy2022",
+    "htld-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q22",
+   "question": "How much did Werner pay to acquire ReedTMS?",
+   "answer": "$109.2 million total purchase price.",
+   "evidence": [
+    "$109.2 million"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2022"
+   ]
+  },
+  {
+   "id": "Q23",
+   "question": "Is Werner expecting its revenues to decline?",
+   "answer": "No such forecast exists. The language sits in Item 1A Risk Factors, which describes what could happen, not what management expects.",
+   "evidence": [
+    "difficulty in recruiting and retaining"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q24",
+   "question": "Does Werner have good relationships with its vendors and suppliers?",
+   "answer": "The phrase appears inside a risk factor about vendor dependence, as the premise of a hypothetical, not a management assertion.",
+   "evidence": [
+    "good vendor relationships",
+    "may cause our actual results"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q25",
+   "question": "Did both companies grow revenue in 2023 compared with 2022?",
+   "answer": "No. Heartland grew ($967,996k to $1,207,458k); Werner declined slightly ($3,289,978k to $3,283,499k).",
+   "evidence": [
+    "3,283,499",
+    "3,289,978",
+    "1,207,458",
+    "967,996"
+   ],
+   "distractors": [],
+   "expect_docs": "corpus"
+  },
+  {
+   "id": "Q26",
+   "question": "Which of these two companies had the higher revenue in 2023?",
+   "answer": "Werner, $3,283,499k against Heartland's $1,207,458k.",
+   "evidence": [
+    "3,283,499",
+    "1,207,458"
+   ],
+   "distractors": [],
+   "expect_docs": "corpus"
+  },
+  {
+   "id": "Q27",
+   "question": "Summarise every risk factor Werner discloses for 2023.",
+   "answer": "Item 1A runs roughly 25,600 characters across dozens of distinct risks.",
+   "evidence": [
+    "difficulty in recruiting and retaining",
+    "cybersecurity",
+    "fuel",
+    "insurance"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2023"
+   ]
+  },
+  {
+   "id": "Q28",
+   "question": "List every acquisition Werner completed between 2021 and 2023.",
+   "answer": "Four: ECM Associated (July 2021), NEHDS Logistics (November 2021), Baylor Trucking (October 2022) and ReedTMS (November 2022).",
+   "evidence": [
+    "ECM Associated",
+    "NEHDS",
+    "Baylor",
+    "ReedTMS"
+   ],
+   "distractors": [],
+   "expect_docs": [
+    "wern-10k-fy2021",
+    "wern-10k-fy2022",
+    "wern-10k-fy2023"
+   ]
+  }
+ ]
+}

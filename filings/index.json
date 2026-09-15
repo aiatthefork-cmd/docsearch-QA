@@ -1,0 +1,64 @@
+{
+ "filings": [
+  {
+   "doc_id": "wern-10k-fy2021",
+   "ticker": "WERN",
+   "company": "WERNER ENTERPRISES INC",
+   "fiscal_year": 2021,
+   "form": "10-K",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/793074/000079307422000012/wern-20211231.htm",
+   "file": "wern-10k-fy2021.htm",
+   "bytes": 2057885
+  },
+  {
+   "doc_id": "wern-10k-fy2022",
+   "ticker": "WERN",
+   "company": "WERNER ENTERPRISES INC",
+   "fiscal_year": 2022,
+   "form": "10-K",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/793074/000079307423000014/wern-20221231.htm",
+   "file": "wern-10k-fy2022.htm",
+   "bytes": 2121299
+  },
+  {
+   "doc_id": "wern-10k-fy2023",
+   "ticker": "WERN",
+   "company": "WERNER ENTERPRISES INC",
+   "fiscal_year": 2023,
+   "form": "10-K",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/793074/000079307424000014/wern-20231231.htm",
+   "file": "wern-10k-fy2023.htm",
+   "bytes": 1688409
+  },
+  {
+   "doc_id": "htld-10k-fy2021",
+   "ticker": "HTLD",
+   "company": "HEARTLAND EXPRESS INC",
+   "fiscal_year": 2021,
+   "form": "10-K",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/799233/000079923322000006/htld-20211231.htm",
+   "file": "htld-10k-fy2021.htm",
+   "bytes": 1510681
+  },
+  {
+   "doc_id": "htld-10k-fy2022",
+   "ticker": "HTLD",
+   "company": "HEARTLAND EXPRESS INC",
+   "fiscal_year": 2022,
+   "form": "10-K",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/799233/000079923323000005/htld-20221231.htm",
+   "file": "htld-10k-fy2022.htm",
+   "bytes": 1793912
+  },
+  {
+   "doc_id": "htld-10k-fy2023",
+   "ticker": "HTLD",
+   "company": "HEARTLAND EXPRESS INC",
+   "fiscal_year": 2023,
+   "form": "10-K",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/799233/000079923324000005/htld-20231231.htm",
+   "file": "htld-10k-fy2023.htm",
+   "bytes": 1425423
+  }
+ ]
+}

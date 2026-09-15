@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+
+# INTERVIEWER ONLY - must never reach a public repo
+answer_key.json
+verify.py
+INTERVIEWER_PACK.md
