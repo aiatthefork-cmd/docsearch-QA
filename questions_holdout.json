@@ -1,0 +1,53 @@
+{
+ "description": "A held-out set. Questions only - the answers are not in this repository.",
+ "questions": [
+  {
+   "id": "H01",
+   "question": "Where is Smith Transport headquartered?"
+  },
+  {
+   "id": "H02",
+   "question": "When did Heartland Express acquire CFI?"
+  },
+  {
+   "id": "H03",
+   "question": "Why does Werner say driver supply has tightened?"
+  },
+  {
+   "id": "H04",
+   "question": "Why does Heartland Express keep the average age of its tractors low?"
+  },
+  {
+   "id": "H05",
+   "question": "What were Werner's salaries, wages and benefits in 2023?"
+  },
+  {
+   "id": "H06",
+   "question": "What was Werner's fuel expense in 2023?"
+  },
+  {
+   "id": "H07",
+   "question": "How much cash did Werner hold at the end of 2023?"
+  },
+  {
+   "id": "H08",
+   "question": "What was Heartland Express's operating revenue in 2022?"
+  },
+  {
+   "id": "H09",
+   "question": "Taking both companies together, which fiscal year had the highest combined revenue?"
+  },
+  {
+   "id": "H10",
+   "question": "List every operating expense line item Werner reports for 2023."
+  },
+  {
+   "id": "H11",
+   "question": "Is Werner worried about a driver shortage?"
+  },
+  {
+   "id": "H12",
+   "question": "How much did the company spend on fuel?"
+  }
+ ]
+}

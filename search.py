@@ -6,7 +6,8 @@
     python search.py --inspect wern-10k-fy2023      # how a filing was chunked
     python search.py --find "30,810"                # which chunks hold a phrase
     python search.py --grep "30,810"                # which filings hold it
-    python search.py --questions                    # run the whole question set
+    python search.py --questions                    # run the question set
+    python search.py --questions questions_holdout.json
 """
 
 import argparse
@@ -24,7 +25,8 @@ def main():
     ap.add_argument("--inspect", metavar="DOC_ID")
     ap.add_argument("--find", metavar="PHRASE")
     ap.add_argument("--grep", metavar="PHRASE")
-    ap.add_argument("--questions", action="store_true")
+    ap.add_argument("--questions", nargs="?", const="questions.json",
+                    metavar="FILE", help="run a question set (default questions.json)")
     ap.add_argument("-k", type=int, default=TOP_K)
     args = ap.parse_args()
 
@@ -50,9 +52,12 @@ def main():
     if args.ask:
         show(args.ask)
     else:
-        for q in json.load(open("questions.json", encoding="utf-8"))["questions"]:
+        for q in json.load(open(args.questions, encoding="utf-8"))["questions"]:
             print("=" * 74)
-            print(f"{q['id']}  correct answer: {q['answer']}")
+            if q.get("answer"):
+                print(f"{q['id']}  correct answer: {q['answer']}")
+            else:
+                print(f"{q['id']}")
             show(q["question"])
     return 0
 

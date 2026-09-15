@@ -1,4 +1,4 @@
-# docsearch
+# docsearch-QA
 
 A retrieval prototype for searching annual reports.
 
@@ -36,7 +36,7 @@ Add `--tickers ODFL SNDR --years 2022 2023` to pull different companies.
 
 | | |
 |---|---|
-| `filings/` | The annual reports exactly as filed with the SEC. Open one in a browser. |
+| `filings/` | The annual reports exactly as filed with the SEC |
 | `corpus/filings.jsonl` | The extracted text, one JSON record per filing, with metadata |
 | `SOURCES.md` | Each filing, its extracted record, and a link to the original |
 | `fetch_filings.py` | Downloads filings from EDGAR |
@@ -44,6 +44,7 @@ Add `--tickers ODFL SNDR --years 2022 2023` to pull different companies.
 | `pipeline.py` | Chunking, embedding, search |
 | `search.py` | Ask a question, inspect what got indexed |
 | `questions.json` | Test questions, their correct answers, and the evidence that proves each |
+| `questions_holdout.json` | A second set of questions. No answers - those are held separately |
 | `evaluate.py` | Scores how well the system retrieves that evidence |
 | `results/baseline.json` | The current scores |
 
@@ -76,10 +77,15 @@ exact text that has to be retrieved for that answer to be supportable.
 ```
   evidence recall@5       fraction of questions where the proving evidence was retrieved
   full evidence@5         fraction where every required span was retrieved
+  answerable@5            full evidence present AND no competing value alongside it
   MRR                     how high up it came - rank 1 beats rank 5
   provenance precision    share of retrieved chunks from the filing the question is about
   document coverage       for questions spanning filings, how many were represented
 ```
+
+`answerable` is the strict one. Retrieving the 2021 revenue figure looks like a success
+until you notice the 2022 and 2023 figures came with it and nothing in the context says
+which is which. Recall counts that as a hit; `answerable` does not.
 
 ```bash
 python evaluate.py --detail                          # where it fails, and what was missing
@@ -89,6 +95,33 @@ python evaluate.py --compare results/baseline.json   # did a change help?
 
 `--compare` reports the movement in each metric and names the questions that
 started or stopped working, so a change can be judged rather than asserted.
+
+### The held-out set
+
+`questions_holdout.json` holds a further twelve questions with no answers in this
+repository. Tuning against a set whose answers you can see is a good way to make the
+numbers move without making the system better, so this set exists to check that any
+improvement generalises.
+
+```bash
+python search.py --questions questions_holdout.json
+```
+
+That prints what the system retrieves for each. Judging whether those passages actually
+support an answer is left to you.
+
+---
+
+## Reading the filings
+
+GitHub shows `.htm` files as source, so clicking one here gets you markup rather than a
+document. Two ways to read them properly:
+
+- clone the repo and open `filings/wern-10k-fy2023.htm` in a browser, or
+- follow the EDGAR link for that filing in `SOURCES.md`
+
+Worth doing at least once. What the pipeline sees is `corpus/filings.jsonl`, and the
+difference between the two is where a good deal of the behaviour comes from.
 
 ---
 
